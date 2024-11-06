@@ -474,7 +474,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 5px;
+  padding: 0.8rem;
   flex: 1;
 }
 .header__logo .header__logo__img {
@@ -493,6 +493,8 @@ body {
 .header__btn {
   flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -507,12 +509,15 @@ body {
 .header__nav {
   flex: 1;
   display: flex;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 .header__nav__link {
   flex: 1;
+  height: 100%;
+  padding: 1rem;
   text-align: center;
   color: white;
   display: flex;
@@ -521,7 +526,7 @@ body {
 }
 
 .--current {
-  background-color: #0d2747;
+  background-color: #256dc5;
 }
 
 @media (max-width: 768px) {
@@ -597,14 +602,7 @@ body {
 }
 @media (max-width: 480px) {
   .showcase {
-    height: 80vh;
-    padding: 0;
-  }
-  .showcase__title {
-    font-size: 3rem;
-  }
-  .showcase__subtitle {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 .services__section {
@@ -618,7 +616,8 @@ body {
 }
 
 .service__title {
-  margin: 0;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 .service__paragraph,
@@ -652,6 +651,7 @@ body {
 
 @media (max-width: 768px) {
   .services__section {
+    margin-top: 20vh;
     padding: 5rem 5%;
     padding-bottom: 1rem;
   }
@@ -714,9 +714,8 @@ body {
 .doctor {
   display: flex;
   margin-bottom: 3rem;
-  background-color: #c5d8f0;
   padding: 2rem 4rem;
-  border-radius: 20px;
+  align-items: center;
 }
 
 .doctor__info {
@@ -729,8 +728,8 @@ body {
 
 .doctor__img {
   flex: 1;
-  margin-right: 5rem;
-  border-radius: 50%;
+  border-radius: 10%;
+  max-width: 15vw;
 }
 
 @media (max-width: 768px) {
@@ -757,8 +756,9 @@ body {
     margin: 0;
   }
   .doctor__img {
+    border-radius: 50%;
     margin: 1.5rem 0 0 0;
-    width: 40%;
+    max-width: 40%;
   }
   .doctor__profile {
     margin: 1.5rem 0 1rem 0;
@@ -767,7 +767,7 @@ body {
 }
 @media (max-width: 480px) {
   .team__section {
-    padding: 2rem 0;
+    margin-top: 30vh;
   }
   .doctor {
     flex-direction: column;
@@ -785,6 +785,7 @@ body {
   }
 }
 .form__container {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -824,7 +825,7 @@ body {
 }
 @media (max-width: 480px) {
   .form__container {
-    padding: 2rem 1rem;
+    margin-top: 20vh;
   }
   .form__label {
     text-align: start;

@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import '../../lib/bootstrap-5.3.3/scss/bootstrap';
-
 // 1. Vendors
 @use 'vendors/normalize';
 
@@ -26,3 +24,5 @@
 
 // 6. Themes
 @use 'themes/default';
+
+@import '../../lib/bootstrap-5.3.3/scss/bootstrap';

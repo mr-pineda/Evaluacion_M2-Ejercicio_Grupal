@@ -2,6 +2,7 @@
 @import '../abstracts';
 
 .form__container {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +39,8 @@
 
 @include breakpoint('small') {
   .form__container {
-    padding: 2rem 1rem;
+    margin-top: 20vh;
+    // padding: 2rem 1rem;
   }
   .form__label {
     text-align: start;

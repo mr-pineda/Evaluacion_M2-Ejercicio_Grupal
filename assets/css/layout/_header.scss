@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 5px;
+  padding: 0.8rem;
   flex: 1;
   .header__logo__img {
     height: 3rem;
@@ -35,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: red;
   margin: 0;
   padding: 0;
 }
@@ -48,11 +47,14 @@
 .header__nav {
   flex: 1;
   display: flex;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 .header__nav__link {
   flex: 1;
+  height: 100%;
+  padding: 1rem;
   text-align: center;
   color: white;
   display: flex;
@@ -61,7 +63,7 @@
 }
 
 .--current {
-  background-color: abstracts.$color-primary-600;
+  background-color: abstracts.$color-primary-300;
 }
 
 @include breakpoint('medium') {

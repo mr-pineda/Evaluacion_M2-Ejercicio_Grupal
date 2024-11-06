@@ -10,7 +10,8 @@
   margin-bottom: 2rem;
 }
 .service__title {
-  margin: 0;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 .service__paragraph,
 .service__list {
@@ -41,6 +42,7 @@
 
 @include breakpoint('medium') {
   .services__section {
+    margin-top: 20vh;
     padding: 5rem 5%;
     padding-bottom: 1rem;
   }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="navbar fixed-top navbar-light bg-dark">
       <div class="header__logo">
         <img
           class="header__logo__img"
@@ -17,7 +17,7 @@
         <h1 class="header__logo__text">Hospital Top Top Top</h1>
       </div>
       <div class="header__btn">
-        <button class="header__btn__item">Reservar Cita</button>
+        <button class="btn btn-primary btn-lg">Reservar Cita</button>
       </div>
       <nav class="header__nav">
         <a class="header__nav__link" href="index.html">Inicio</a>
@@ -25,31 +25,45 @@
         <a class="header__nav__link --current" href="contact.html">Contacto</a>
       </nav>
     </header>
-    <section class="form__container">
-      <h1 class="form__title">Contáctanos</h1>
-      <form action="">
-        <div class="form__item">
-          <label class="form__label" for="name"> Nombre: </label>
-          <input class="form__entry" type="text" name="name" />
+
+    <section class="showcase text-center">
+      <h1 class="showcase__title display-1">Contáctanos</h1>
+      <p class="showcase__subtitle">Te responderemos a la brevedad</p>
+    </section>
+
+    <div class="container container-fluid form__container>
+      <h2 class="h1t">Formulario de contacto</h2>
+      <form class="row g-3 mt-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" />
         </div>
-        <div class="form__item">
-          <label class="form__label" for="email"> Correo: </label>
-          <input class="form__entry" type="email" name="email" />
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="inputEmail4" />
         </div>
-        <div class="form__item">
-          <label class="form__label" for="message">Mensaje:</label>
-          <textarea
-            class="form__entry"
-            name="message"
-            id="message"
-            rows="7"
-          ></textarea>
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <textarea class="form-control" id="comentario" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
       </form>
+    </div>
+
+    <section class="container container-fluid my-5">
+      <h1>Mapa de ubicación</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4642279391574!2d-70.62389457430974!3d-33.437209973394744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf262f809fa3%3A0xa1f942ca5d1850a1!2sMinistro%20Carvajal%20esquina%20Ministro%20Carvajal!5e0!3m2!1ses!2scl!4v1730765319844!5m2!1ses!2scl"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="col-12"
+      ></iframe>
     </section>
-    <section id="map">
-      <!-- Colocar código del mapa -->
-    </section>
+
     <footer class="footer">
       <div class="footer__section">
         <h3 class="footer__section__title">Telefonos:</h3>

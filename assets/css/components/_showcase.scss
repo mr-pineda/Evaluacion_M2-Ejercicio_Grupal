@@ -32,13 +32,12 @@
 
 @include breakpoint('small') {
   .showcase {
-    height: 80vh;
-    padding: 0;
+    display: none;
   }
-  .showcase__title {
-    font-size: 3rem;
-  }
-  .showcase__subtitle {
-    font-size: 1.5rem;
-  }
+  // .showcase__title {
+  //   font-size: 3rem;
+  // }
+  // .showcase__subtitle {
+  //   font-size: 1.5rem;
+  // }
 }

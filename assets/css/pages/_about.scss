@@ -8,9 +8,11 @@
 .doctor {
   display: flex;
   margin-bottom: 3rem;
-  background-color: abstracts.$color-primary-100;
+  // background-color: abstracts.$color-primary-100;
   padding: 2rem 4rem;
-  border-radius: 20px;
+  // border-radius: 20px;
+  // justify-content: space-between;
+  align-items: center;
 }
 .doctor__info {
   flex: 2;
@@ -20,8 +22,9 @@
 }
 .doctor__img {
   flex: 1;
-  margin-right: 5rem;
-  border-radius: 50%;
+  // margin-right: 5rem;
+  border-radius: 10%;
+  max-width: 15vw;
 }
 
 @include breakpoint('medium') {
@@ -49,8 +52,9 @@
     margin: 0;
   }
   .doctor__img {
+    border-radius: 50%;
     margin: 1.5rem 0 0 0;
-    width: 40%;
+    max-width: 40%;
   }
   .doctor__profile {
     margin: 1.5rem 0 1rem 0;
@@ -59,9 +63,9 @@
 }
 
 @include breakpoint('small') {
-  // Team
   .team__section {
-    padding: 2rem 0;
+    margin-top: 30vh;
+    // padding: 2rem 0;
   }
   .doctor {
     flex-direction: column;
